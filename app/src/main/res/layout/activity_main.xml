@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvBig"
+        android:layout_width="85sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalWeight"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvSmall"
+        android:layout_width="85sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMedium"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvSmallest"
+        android:layout_width="85sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSmall"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvMedium"
+        android:layout_width="85sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="160sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBig"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalWeight"
+        android:layout_width="152dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/bBiggestPlate"
+        android:layout_width="240sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvBig"
+        app:layout_constraintTop_toBottomOf="@+id/tbUnits"
+        tools:text="Button" />
+
+    <Button
+        android:id="@+id/bMediumPlate"
+        android:layout_width="240sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvMedium"
+        app:layout_constraintTop_toBottomOf="@+id/bBiggestPlate" />
+
+    <Button
+        android:id="@+id/bSmallPlate"
+        android:layout_width="240sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvSmall"
+        app:layout_constraintTop_toBottomOf="@+id/bMediumPlate" />
+
+    <Button
+        android:id="@+id/bSmallestPlate"
+        android:layout_width="240sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvSmallest"
+        app:layout_constraintTop_toBottomOf="@+id/bSmallPlate" />
+
+    <ToggleButton
+        android:id="@+id/tbUnits"
+        android:layout_width="142dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        android:text="ToggleButton"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalWeight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
