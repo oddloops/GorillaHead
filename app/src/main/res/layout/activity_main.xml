@@ -22,22 +22,30 @@
         android:id="@+id/tvTotalWeight"
         android:layout_width="140sp"
         android:layout_height="70sp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="75dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="81dp"
         tools:text="0" />
 
+    <ToggleButton
+        android:id="@+id/tbUnits"
+        android:layout_width="140sp"
+        android:layout_height="70sp"
+        android:text="@string/lb_unit"
+        android:textOff="@string/lb_unit"
+        android:textOn="@string/kg_unit"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="171dp" />
+
     <TextView
-        android:id="@+id/tvBig"
+        android:id="@+id/tvSmall"
         android:layout_width="85sp"
         android:layout_height="80sp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotalWeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvMedium"
         tools:text="0" />
 
     <TextView
@@ -45,21 +53,21 @@
         android:layout_width="85sp"
         android:layout_height="80sp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBig"
         tools:text="0" />
 
     <TextView
-        android:id="@+id/tvSmall"
+        android:id="@+id/tvBig"
         android:layout_width="85sp"
         android:layout_height="80sp"
-        android:layout_marginStart="40sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="275dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMedium"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="0" />
 
     <TextView
@@ -67,66 +75,54 @@
         android:layout_width="85sp"
         android:layout_height="80sp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSmall"
         tools:text="0" />
 
-    <ToggleButton
-        android:id="@+id/tbUnits"
-        android:layout_width="140sp"
-        android:layout_height="70sp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="75dp"
-        android:text="@string/lb_unit"
-        android:textOff="@string/lb_unit"
-        android:textOn="@string/kg_unit"
-        app:layout_constraintStart_toEndOf="@+id/tvTotalWeight"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bBig"
-        android:layout_width="200sp"
-        android:layout_height="80sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/big_plate"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/tvBig"
-        app:layout_constraintTop_toBottomOf="@+id/tbUnits" />
-
-    <Button
-        android:id="@+id/bMedium"
-        android:layout_width="200sp"
-        android:layout_height="80sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/med_plate"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/tvMedium"
-        app:layout_constraintTop_toBottomOf="@+id/bBig" />
-
     <Button
         android:id="@+id/bSmall"
         android:layout_width="200sp"
         android:layout_height="80sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
         android:text="@string/small_plate"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/tvSmall"
         app:layout_constraintTop_toBottomOf="@+id/bMedium" />
 
     <Button
+        android:id="@+id/bBig"
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="275dp"
+        android:text="@string/big_plate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvBig"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/bSmallest"
         android:layout_width="200sp"
         android:layout_height="80sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
         android:text="@string/smallest_plate"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/tvSmallest"
         app:layout_constraintTop_toBottomOf="@+id/bSmall" />
+
+    <Button
+        android:id="@+id/bMedium"
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/med_plate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvMedium"
+        app:layout_constraintTop_toBottomOf="@+id/bBig" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
