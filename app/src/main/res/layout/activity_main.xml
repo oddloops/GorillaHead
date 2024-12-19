@@ -22,20 +22,24 @@
         android:id="@+id/tvTotalWeight"
         android:layout_width="140sp"
         android:layout_height="70sp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="81dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName"
         tools:text="0" />
 
     <ToggleButton
         android:id="@+id/tbUnits"
         android:layout_width="140sp"
         android:layout_height="70sp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
         android:text="@string/lb_unit"
         android:textOff="@string/lb_unit"
         android:textOn="@string/kg_unit"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="171dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalWeight" />
 
     <TextView
         android:id="@+id/tvSmall"
@@ -64,10 +68,10 @@
         android:layout_width="85sp"
         android:layout_height="80sp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="24dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbUnits"
         tools:text="0" />
 
     <TextView
@@ -97,11 +101,11 @@
         android:layout_width="200sp"
         android:layout_height="80sp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="24dp"
         android:text="@string/big_plate"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/tvBig"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tbUnits" />
 
     <Button
         android:id="@+id/bSmallest"
