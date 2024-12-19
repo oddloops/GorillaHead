@@ -8,50 +8,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvBig"
-        android:layout_width="85sp"
-        android:layout_height="100sp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotalWeight"
-        tools:text="TextView" />
-
-    <TextView
-        android:id="@+id/tvSmall"
-        android:layout_width="85sp"
-        android:layout_height="100sp"
-        android:layout_marginStart="40sp"
-        android:layout_marginTop="24sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMedium"
-        tools:text="TextView" />
-
-    <TextView
-        android:id="@+id/tvSmallest"
-        android:layout_width="85sp"
-        android:layout_height="100sp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSmall"
-        tools:text="TextView" />
-
-    <TextView
-        android:id="@+id/tvMedium"
-        android:layout_width="85sp"
-        android:layout_height="100sp"
-        android:layout_marginStart="40sp"
-        android:layout_marginTop="160sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBig"
-        tools:text="TextView" />
-
-    <TextView
         android:id="@+id/tvAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,69 +20,111 @@
 
     <TextView
         android:id="@+id/tvTotalWeight"
-        android:layout_width="152dp"
-        android:layout_height="70dp"
+        android:layout_width="140sp"
+        android:layout_height="70sp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="75dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="0" />
 
-    <Button
-        android:id="@+id/bBiggestPlate"
-        android:layout_width="240sp"
-        android:layout_height="100sp"
+    <TextView
+        android:id="@+id/tvBig"
+        android:layout_width="85sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="28dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvBig"
-        app:layout_constraintTop_toBottomOf="@+id/tbUnits"
-        tools:text="Button" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalWeight"
+        tools:text="0" />
 
-    <Button
-        android:id="@+id/bMediumPlate"
-        android:layout_width="240sp"
-        android:layout_height="100sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Button"
+    <TextView
+        android:id="@+id/tvMedium"
+        android:layout_width="85sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/tvMedium"
-        app:layout_constraintTop_toBottomOf="@+id/bBiggestPlate" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBig"
+        tools:text="0" />
 
-    <Button
-        android:id="@+id/bSmallPlate"
-        android:layout_width="240sp"
-        android:layout_height="100sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Button"
+    <TextView
+        android:id="@+id/tvSmall"
+        android:layout_width="85sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="40dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/tvSmall"
-        app:layout_constraintTop_toBottomOf="@+id/bMediumPlate" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMedium"
+        tools:text="0" />
 
-    <Button
-        android:id="@+id/bSmallestPlate"
-        android:layout_width="240sp"
-        android:layout_height="100sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Button"
+    <TextView
+        android:id="@+id/tvSmallest"
+        android:layout_width="85sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/tvSmallest"
-        app:layout_constraintTop_toBottomOf="@+id/bSmallPlate" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSmall"
+        tools:text="0" />
 
     <ToggleButton
         android:id="@+id/tbUnits"
-        android:layout_width="142dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="76dp"
-        android:text="ToggleButton"
+        android:layout_width="140sp"
+        android:layout_height="70sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/lb_unit"
         app:layout_constraintStart_toEndOf="@+id/tvTotalWeight"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bBig"
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/big_plate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvBig"
+        app:layout_constraintTop_toBottomOf="@+id/tbUnits" />
+
+    <Button
+        android:id="@+id/bMedium"
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/med_plate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvMedium"
+        app:layout_constraintTop_toBottomOf="@+id/bBig" />
+
+    <Button
+        android:id="@+id/bSmall"
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/small_plate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvSmall"
+        app:layout_constraintTop_toBottomOf="@+id/bMedium" />
+
+    <Button
+        android:id="@+id/bSmallest"
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/smallest_plate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvSmallest"
+        app:layout_constraintTop_toBottomOf="@+id/bSmall" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
