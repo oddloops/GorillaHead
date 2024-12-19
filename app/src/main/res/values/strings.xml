@@ -3,4 +3,8 @@
     <string name="total_weight">0</string>
     <string name="lb_unit">LBs</string>
     <string name="kg_unit">KGs</string>
+    <string name="big_plate">45</string>
+    <string name="med_plate">25</string>
+    <string name="small_plate">10</string>
+    <string name="smallest_plate">5</string>
 </resources>
