@@ -80,6 +80,8 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="75dp"
         android:text="@string/lb_unit"
+        android:textOff="@string/lb_unit"
+        android:textOn="@string/kg_unit"
         app:layout_constraintStart_toEndOf="@+id/tvTotalWeight"
         app:layout_constraintTop_toTopOf="parent" />
 
